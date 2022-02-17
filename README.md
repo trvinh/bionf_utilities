@@ -18,9 +18,9 @@ docker run -it trvinh/bionf_utilities
 or run the image using Docker Desktop dashboard and open CLI.
 
 ## USAGE
-First need to source the bashrc file
+First you need to source the bashrc file
 ```
 source /root/.bashrc
 ```
 
-Then all the commands of FAS, fDOG, fCAT, etc. can be used without running setup of each tool.
+Then all the commands of FAS, fDOG, fCAT, etc. can be used without running the setup of each tool.
