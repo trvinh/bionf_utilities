@@ -23,4 +23,9 @@ First you need to source the bashrc file
 source /root/.bashrc
 ```
 
-Then all the commands of FAS, fDOG, fCAT, etc. can be used without running the setup of each tool.
+Then all the commands of FAS, fDOG, fCAT, etc. can be used without running the setup of each tool. For example:
+
+```
+fas.doAnno -i test_annofas.fa -o test_fas
+fdog.run --seqFile infile.fa --seqName test_fdog --refspec HUMAN@9606@3
+```
