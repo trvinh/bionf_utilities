@@ -1,4 +1,4 @@
-greedyFAS
-fdog
-fcat
-dcc2
+greedyFAS==1.16.3
+fdog==0.1.5
+fcat==0.1.5
+dcc2==0.2.3
