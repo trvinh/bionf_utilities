@@ -5,6 +5,8 @@
 docker build . -t trvinh/bionf_utilities --platform linux/amd64 --progress=plain
 ```
 
+_**Note**: you need to replace <kbd>trvinh</kbd> by your Docker Username._
+
 ## PULL
 The docker image can be pulled from [Docker Hub](https://hub.docker.com/r/trvinh/bionf_utilities) using this command
 ```
