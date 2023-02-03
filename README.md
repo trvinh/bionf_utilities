@@ -20,14 +20,10 @@ docker run -it trvinh/bionf_utilities
 or run the image using Docker Desktop dashboard and open CLI.
 
 ## USAGE
-First you need to source the bashrc file
-```
-source /root/.bashrc
-```
 
-Then all the commands of FAS, fDOG, fCAT, etc. can be used without running the setup of each tool. For example:
+FAS, fDOG, fCAT, etc. can be used without running the setup of each tool. For example:
 
 ```
 fas.doAnno -i test_annofas.fa -o test_fas
-fdog.run --seqFile infile.fa --seqName test_fdog --refspec HUMAN@9606@3
+fdog.run --seqFile infile.fa --jobName test_fdog --refspec HUMAN@9606@3
 ```
