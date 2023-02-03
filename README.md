@@ -21,7 +21,7 @@ or run the image using Docker Desktop dashboard and open CLI.
 
 ## USAGE
 
-[FAS](https://github.com/BIONF/FAS), [fDOG](https://github.com/BIONF/fDOG), [fCAT](https://github.com/BIONF/fCAT), etc. can be used without running the setup of each tool. For example:
+[FAS](https://github.com/BIONF/FAS), [fDOG](https://github.com/BIONF/fDOG), [fCAT](https://github.com/BIONF/fCAT), etc. can be used directly without running the setup of each tool. For example:
 
 ```
 # FAS annotation
