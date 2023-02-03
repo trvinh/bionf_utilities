@@ -6,7 +6,7 @@ docker build . -t trvinh/bionf_utilities --platform linux/amd64 --progress=plain
 ```
 
 ## PULL
-The docker image can be pulled from dockerhub using this command
+The docker image can be pulled from [Docker Hub](https://hub.docker.com/r/trvinh/bionf_utilities) using this command
 ```
 docker pull trvinh/bionf_utilities
 ```
