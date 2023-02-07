@@ -42,7 +42,6 @@ RUN fas.setup -t /usr/data/annotation_tools \
   source /usr/data/annotation_tools/fas.profile
 
 # Setup fDOG
-# RUN DEBIAN_FRONTEND=noninteractive /usr/src/app/install_lib.sh
 RUN fdog.setup -d /usr/data/fdog_data
 
 # Non-interactive modes get set back.
