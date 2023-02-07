@@ -2,13 +2,13 @@
 
 ## HOW TO USE
 
-### PULL THE IMAGE
+1. Pull the image
 The docker image can be pulled from [Docker Hub](https://hub.docker.com/r/trvinh/bionf_utilities) using this command
 ```
 docker pull trvinh/bionf_utilities
 ```
 
-### RUN THE CONTAINER
+2. Run the container
 
 ```
 docker run -it trvinh/bionf_utilities
@@ -18,16 +18,23 @@ or run the image using Docker Desktop dashboard and open CLI.
 
 ## HOW TO MAINTAIN THE IMAGE
 
-* Clone or fork this repo
+1. Clone or fork this repo
 
-* Build the image
+2. Make changes for these files: Dockerfile, dependencies.txt and tools.txt
+
+3. Build the image
 ```
-docker build . -t trvinh/bionf_utilities --platform linux/amd64 --progress=plain
+docker build . -t trvinh/bionf_utilities:latest --platform linux/amd64 --progress=plain
 ```
 
-_**Note**: you need to replace <kbd>trvinh</kbd> by your Docker Username._
+_**Note**: you need to replace <kbd>trvinh</kbd> by your Docker Username. <kbd><:latest></kbd> specifies the TAG of your build_
 
-* Push to Docker Hub
+4. Push to Docker Hub
+```
+docker push trvinh/bionf_utilities:latest
+```
+
+__Check this [document](https://docs.docker.com/docker-hub/repos/) for more info!__
 
 ## TOOLS included
 
