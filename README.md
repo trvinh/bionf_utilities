@@ -24,14 +24,14 @@ or run the image using Docker Desktop dashboard and open CLI.
 
 3. Build the image
 ```
-docker build . -t trvinh/bionf_utilities:latest --platform linux/amd64 --progress=plain
+docker build . -t trvinh/bionf_utilities[:0.1.2] --platform linux/amd64 --progress=plain
 ```
 
-_**Note**: you need to replace <kbd>trvinh</kbd> by your Docker Username. <kbd><:latest></kbd> specifies the TAG of your build_
+_**Note**: you need to replace <kbd>trvinh</kbd> by your Docker Username. <kbd>:0.1.2</kbd> specifies the TAG of your build (if empty, the default tag <kbd>latest</kbd> will be applied)_
 
 4. Push to Docker Hub
 ```
-docker push trvinh/bionf_utilities:latest
+docker push trvinh/bionf_utilities[:0.1.2]
 ```
 
 __Check this [document](https://docs.docker.com/docker-hub/repos/) for more info!__
