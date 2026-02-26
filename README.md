@@ -11,10 +11,43 @@ docker pull trvinh/bionf_utilities
 2. Run the container
 
 ```
-docker run -it trvinh/bionf_utilities
+docker run --platform linux/amd64 -it trvinh/bionf_utilities
 ```
 
-or run the image using Docker Desktop dashboard and open CLI.
+or run the container using Docker Desktop dashboard and open CLI.
+
+3. Stop the container
+
+First, get the list of all containers
+```
+docker ps -a
+```
+
+Then, stop the corresponding container using its ID
+
+```
+docker stop <container_id>
+```
+
+4. Remove the container (if you no longer need it)
+
+```
+docker rm <container_id>
+```
+
+5. Remove the image (to free disk space)
+
+First, get the image ID
+
+```
+docker image ls
+```
+
+Then, remove the image using it ID
+
+```
+docker rmi <image_id>
+```
 
 ## HOW TO MAINTAIN THE IMAGE
 
@@ -36,6 +69,19 @@ docker push trvinh/bionf_utilities[:0.1.2]
 
 __Check this [document](https://docs.docker.com/docker-hub/repos/) for more info!__
 
+5. Make sure to clean build caches after pushing
+
+Use this command to see how large is the cache
+```
+docker system df
+```
+
+and run this to free the disk space
+
+```
+docker buildx prune
+```
+
 ## TOOLS included
 
 * [FAS](https://github.com/BIONF/FAS)
@@ -49,5 +95,5 @@ Those tools can be used directly without running the setup of each tool. For exa
 fas.doAnno -i test_annofas.fa -o test_fas
 
 # fDOG
-fdog.run --seqFile infile.fa --jobName test_fdog --refspec HUMAN@9606@3
+fdog.run --seqFile infile.fa --jobName test --refspec HUMAN@9606@qfo24_02
 ```
