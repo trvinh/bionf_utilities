@@ -88,6 +88,7 @@ docker buildx prune
 * [FAS](https://github.com/BIONF/FAS)
 * [fDOG](https://github.com/BIONF/fDOG)
 * [fCAT](https://github.com/BIONF/fCAT)
+* [DCC2](https://github.com/BIONF/dcc2)
 
 Those tools can be used directly without running the setup of each tool. For example:
 
