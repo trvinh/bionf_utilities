@@ -3,6 +3,7 @@
 ## HOW TO USE
 
 1. Pull the image
+
 The docker image can be pulled from [Docker Hub](https://hub.docker.com/r/trvinh/bionf_utilities) using this command
 ```
 docker pull trvinh/bionf_utilities
