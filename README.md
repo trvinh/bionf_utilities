@@ -1,4 +1,16 @@
+[![Docker Pulls](https://img.shields.io/docker/pulls/trvinh/bionf_utilities)](https://hub.docker.com/r/trvinh/bionf_utilities)
+[![Docker Image Size](https://img.shields.io/docker/image-size/trvinh/bionf_utilities/latest)](https://hub.docker.com/r/trvinh/bionf_utilities)
+[![Docker Version](https://img.shields.io/docker/v/trvinh/bionf_utilities)](https://hub.docker.com/r/trvinh/bionf_utilities)
+
+
 # bionf_utilities
+
+Docker image for the following [BIONF](https://github.com/BIONF) tools
+
+* [FAS](https://github.com/BIONF/FAS)
+* [fDOG](https://github.com/BIONF/fDOG)
+* [fCAT](https://github.com/BIONF/fCAT)
+* [DCC2](https://github.com/BIONF/dcc2)
 
 ## HOW TO USE
 
