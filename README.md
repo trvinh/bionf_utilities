@@ -37,6 +37,9 @@ fas.doAnno -i test_annofas.fa -o test_fas
 
 # fDOG
 fdog.run --seqFile infile.fa --jobName test --refspec HUMAN@9606@qfo24_02
+
+# fCAT (unzip fCAT test data from test_data/fcat_testData.zip)
+fcat -d fcat_testData/test_coreset -c test -r HUMAN@9606@2209 -q fcat_testData/human.fa --annoQuery fcat_testData/human.json -i 9606
 ```
 
 
