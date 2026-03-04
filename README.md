@@ -29,6 +29,17 @@ docker run --platform linux/amd64 -it trvinh/bionf_utilities
 
 or run the container using Docker Desktop dashboard and open CLI.
 
+The integrated tools can be used directly without running the setup of each tool. For example:
+
+```
+# FAS annotation
+fas.doAnno -i test_annofas.fa -o test_fas
+
+# fDOG
+fdog.run --seqFile infile.fa --jobName test --refspec HUMAN@9606@qfo24_02
+```
+
+
 3. Stop the container
 
 First, get the list of all containers
@@ -95,19 +106,6 @@ and run this to free the disk space
 docker buildx prune
 ```
 
-## TOOLS included
+## TEST USING AWS
 
-* [FAS](https://github.com/BIONF/FAS)
-* [fDOG](https://github.com/BIONF/fDOG)
-* [fCAT](https://github.com/BIONF/fCAT)
-* [DCC2](https://github.com/BIONF/dcc2)
-
-Those tools can be used directly without running the setup of each tool. For example:
-
-```
-# FAS annotation
-fas.doAnno -i test_annofas.fa -o test_fas
-
-# fDOG
-fdog.run --seqFile infile.fa --jobName test --refspec HUMAN@9606@qfo24_02
-```
+Check [this link](https://gist.github.com/trvinh/475f66d40e13dddcb9a40292c8892d93) to test the container using AWS.
