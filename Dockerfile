@@ -53,7 +53,7 @@ COPY --chown=bionf_user:bionf_user dependencies.txt /usr/data/
 RUN micromamba run -n bionf_env micromamba install conda-forge::rpy2
 
 # Install Python tools inside the environment
-RUN micromamba run -n bionf_env pip install greedyFAS==1.19.4 && \
+RUN micromamba run -n bionf_env pip install greedyFAS==1.19.5 && \
     micromamba run -n bionf_env pip install fdog==1.1.4 && \
     micromamba run -n bionf_env pip install fcat==0.1.11 && \
     micromamba run -n bionf_env pip install dcc2==0.3.3
@@ -83,6 +83,12 @@ ENV COILSDIR=/usr/data/annotation_tools/COILS2/coils
 RUN micromamba run -n bionf_env micromamba install -c conda-forge -c bioconda $(cat /usr/data/dependencies.txt) -y && \
     micromamba clean --all --yes
 RUN micromamba run -n bionf_env fdog.setup -d /usr/data/fdog_data
+
+# Pre-build ETE taxonomy DB
+ENV ETE_DATA_DIR=/usr/data/ete_data
+RUN mkdir -p $ETE_DATA_DIR && \
+    micromamba run -n bionf_env python -c "from ete4 import NCBITaxa; NCBITaxa()" && \
+    chmod -R a+rX $ETE_DATA_DIR
 
 # Install R tools from CRAN
 #RUN micromamba run -n bionf_env Rscript -e "install.packages(c('BiocManager', 'xml2', 'mgcv', 'ggplot2', 'colourpicker'), repos='http://cran.r-project.org')"
