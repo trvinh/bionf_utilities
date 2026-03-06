@@ -289,6 +289,19 @@ docker buildx prune
 
 This helps free disk space after building and pushing images.
 
+Or using this one-line "nuclear clean" command
+
+```
+docker system prune -a --volumes -f
+```
+
+Verify Docker is empty
+
+```
+docker system df
+```
+
+
 ---
 
 # Testing Using AWS
